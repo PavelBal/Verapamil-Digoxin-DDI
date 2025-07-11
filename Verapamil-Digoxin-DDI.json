@@ -2037,89 +2037,16 @@
       "PlasmaProteinBindingPartner": "Albumin",
       "Lipophilicity": [
         {
-          "Name": "Hinderling 1984",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 1.22,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "Zaragoza Dörwald 2012, Book",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 1.29,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "Atkinson 1988",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 1.67,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "Sangster J; LOGKOW Databank. Sangster Res. Lab., Montreal Quebec, Canada 1994",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 1.26,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "ALOGPS, CALCULATED",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 1.04,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "ChemAxon, CALCULATED",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 2.37,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "Alsenz 2007",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 1.623,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
           "Name": "fitted",
           "Parameters": [
             {
               "Name": "Lipophilicity",
               "Value": 1.40017663,
-              "Unit": "Log Units"
+              "Unit": "Log Units",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification"
+              }
             }
           ]
         }
@@ -2131,84 +2058,38 @@
           "Parameters": [
             {
               "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 0.71
+              "Value": 0.71,
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Neuhoff 2013"
+              }
             }
           ]
         }
       ],
       "Solubility": [
         {
-          "Name": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+          "Name": "Aqueous Solubility",
           "Parameters": [
             {
               "Name": "Solubility at reference pH",
               "Value": 64.8,
-              "Unit": "mg/l"
+              "Unit": "mg/l",
+              "ValueOrigin": {
+                "Source": "Internet",
+                "Method": "InVitro",
+                "Description": "Drugbank"
+              }
             },
             {
               "Name": "Reference pH",
-              "Value": 7.0
-            }
-          ],
-          "Description": "64.8 mg/L (at 25 °C)\r\nYalkowsky SH, Dannenfelser RM; The AQUASOL dATAbASE of Aqueous Solubility. Fifth ed, Tucson, AZ: Univ Az, College of Pharmacy (1992)"
-        },
-        {
-          "Name": "Aqueous Solubility, Alsenz 2007",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Solubility at reference pH",
-              "Value": 30.0,
-              "Unit": "mg/l"
-            },
-            {
-              "Name": "Reference pH",
-              "Value": 6.5
-            }
-          ]
-        },
-        {
-          "Name": "Phosphate buffer, Alsenz 2007",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Solubility at reference pH",
-              "Value": 16.0,
-              "Unit": "mg/l"
-            },
-            {
-              "Name": "Reference pH",
-              "Value": 6.5
-            }
-          ]
-        },
-        {
-          "Name": "FaSSIF, Alsenz 2007",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Solubility at reference pH",
-              "Value": 17.0,
-              "Unit": "mg/l"
-            },
-            {
-              "Name": "Reference pH",
-              "Value": 6.5
-            }
-          ]
-        },
-        {
-          "Name": "FeSSIF, Alsenz 2007",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Solubility at reference pH",
-              "Value": 4.0,
-              "Unit": "mg/l"
-            },
-            {
-              "Name": "Reference pH",
-              "Value": 5.0
+              "Value": 7.0,
+              "ValueOrigin": {
+                "Source": "Internet",
+                "Method": "InVitro",
+                "Description": "Drugbank"
+              }
             }
           ]
         }
@@ -2220,11 +2101,7 @@
             {
               "Name": "Specific intestinal permeability (transcellular)",
               "Value": 2.7627E-07,
-              "Unit": "dm/min",
-              "ValueOrigin": {
-                "Source": "ParameterIdentification",
-                "Method": "ParameterIdentification"
-              }
+              "Unit": "dm/min"
             }
           ]
         }
@@ -2236,27 +2113,12 @@
             {
               "Name": "Permeability",
               "Value": 1.0115E-05,
-              "Unit": "dm/min",
-              "ValueOrigin": {
-                "Source": "ParameterIdentification",
-                "Method": "ParameterIdentification"
-              }
+              "Unit": "dm/min"
             }
           ]
         }
       ],
       "Processes": [
-        {
-          "InternalName": "GlomerularFiltration",
-          "DataSource": "Steiness (1982)",
-          "Species": "Human",
-          "Parameters": [
-            {
-              "Name": "GFR fraction",
-              "Value": 1.0
-            }
-          ]
-        },
         {
           "InternalName": "SpecificBinding",
           "DataSource": "Katz (2010)",
@@ -2265,12 +2127,49 @@
             {
               "Name": "koff",
               "Value": 0.00098888,
-              "Unit": "1/min"
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Katz 2010"
+              }
             },
             {
               "Name": "Kd",
               "Value": 25.6,
-              "Unit": "nmol/l"
+              "Unit": "nmol/l",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "LiverClearance",
+          "DataSource": "Fitted",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (experiment)",
+              "Value": 0.71
+            },
+            {
+              "Name": "Lipophilicity (experiment)",
+              "Value": 1.40017663,
+              "Unit": "Log Units"
+            },
+            {
+              "Name": "Plasma clearance",
+              "Value": 0.0,
+              "Unit": "ml/min/kg"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.03758077,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification"
+              }
             }
           ]
         },
@@ -2302,59 +2201,21 @@
                 "Source": "ParameterIdentification"
               }
             }
-          ]
+          ],
+          "Description": "A transporter mediated unidirectional transfer of a compound across a cellular membrane is described as saturable process following Michaelis-Menten type kinetics. The corresponding kcat value is calculated from a specific Vmax as input value."
         },
         {
-          "InternalName": "LiverClearance",
-          "DataSource": "fitted",
+          "InternalName": "GlomerularFiltration",
+          "DataSource": "Steiness (1982)",
           "Species": "Human",
           "Parameters": [
             {
-              "Name": "Body weight",
-              "Value": 60.0341442787,
-              "Unit": "kg"
-            },
-            {
-              "Name": "Volume (liver)",
-              "Value": 1.8995457119,
-              "Unit": "l",
+              "Name": "GFR fraction",
+              "Value": 1.0,
               "ValueOrigin": {
                 "Source": "Publication",
-                "Description": "ICRP, 2002. Basic Anatomical and Physiological Data for Use in Radiological Protection Reference Values. ICRP Publication 89. Ann. ICRP 32 (3-4). https://doi.org/10.1016/0146-6453(79)90123-4"
+                "Description": "Steiness (1982)"
               }
-            },
-            {
-              "Name": "Blood flow rate (liver)",
-              "Value": 0.3407785007,
-              "Unit": "l/min",
-              "ValueOrigin": {
-                "Source": "Other",
-                "Description": "Absolute value = specific value (i.e. value normalized to the volume of the organ) multiplied by the organ volume"
-              }
-            },
-            {
-              "Name": "Blood flow rate (portal vein)",
-              "Value": 0.9949208478,
-              "Unit": "l/min"
-            },
-            {
-              "Name": "Fraction unbound (experiment)",
-              "Value": 0.71
-            },
-            {
-              "Name": "Lipophilicity (experiment)",
-              "Value": 2.58,
-              "Unit": "Log Units"
-            },
-            {
-              "Name": "Plasma clearance",
-              "Value": 0.0,
-              "Unit": "ml/min/kg"
-            },
-            {
-              "Name": "Specific clearance",
-              "Value": 0.03758077,
-              "Unit": "1/min"
             }
           ]
         }
@@ -2367,7 +2228,12 @@
         {
           "Name": "Molecular weight",
           "Value": 780.93,
-          "Unit": "g/mol"
+          "Unit": "g/mol",
+          "ValueOrigin": {
+            "Source": "Internet",
+            "Method": "InVitro",
+            "Description": "Drugbank"
+          }
         }
       ]
     }
@@ -6894,7 +6760,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -7266,7 +7132,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -8324,7 +8190,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -8812,7 +8678,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -9405,7 +9271,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -9863,7 +9729,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -10899,7 +10765,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -14645,7 +14511,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -15824,7 +15690,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -16981,7 +16847,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -17502,7 +17368,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -18589,7 +18455,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -19089,7 +18955,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -19947,7 +19813,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -20271,7 +20137,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -24858,7 +24724,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -26008,7 +25874,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -26511,7 +26377,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -26755,7 +26621,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
@@ -27532,7 +27398,7 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Aqueous Solubility, AQUASOL dATAbASE (1992)",
+              "AlternativeName": "Aqueous Solubility",
               "GroupName": "COMPOUND_SOLUBILITY"
             },
             {
